@@ -29,12 +29,9 @@
   <p class="meta">Dernière mise à jour : 8 mai 2026</p>
 
   <div class="callout">
-    <strong>En résumé :</strong> Toutes vos données financières (salaires,
-    dépenses, objectifs, dettes) restent <strong>uniquement</strong> sur
-    votre téléphone. La seule chose qui sort de l'application est un
-    rapport <strong>anonyme</strong> de plantage envoyé à Firebase
-    Crashlytics si l'app crashe, pour qu'on puisse corriger le bug. Aucune
-    publicité, aucun pistage, aucune revente de données.
+    <strong>En une phrase :</strong> Tourond fonctionne entièrement sur votre
+    téléphone. Aucune donnée n'est envoyée, stockée ou consultée par
+    l'éditeur ou un tiers.
   </div>
 
   <h2>1. Qui édite l'application</h2>
@@ -44,49 +41,21 @@
     Contact : <a href="mailto:baptistemichel22@gmail.com">baptistemichel22@gmail.com</a>
   </p>
 
-  <h2>2. Données saisies dans l'application — 100 % locales</h2>
+  <h2>2. Données traitées par l'application</h2>
   <p>
-    Les informations que vous saisissez (prénoms, salaires, dépenses,
-    objectifs d'épargne, dettes, réglages de calcul) sont stockées
-    <strong>uniquement</strong> dans la base SQLite locale de
-    l'application, sur votre appareil.
+    Tourond est une application <strong>locale</strong>. Les informations que
+    vous saisissez (prénoms, salaires, dépenses, objectifs d'épargne, dettes,
+    réglages de calcul) sont stockées <strong>uniquement</strong> dans la base
+    SQLite locale de l'application, sur votre appareil.
   </p>
   <p>Ces données ne sont :</p>
   <ul>
     <li>jamais envoyées vers un serveur de l'éditeur (il n'existe pas de serveur Tourond) ;</li>
-    <li>jamais transmises à un tiers (y compris Firebase) ;</li>
-    <li>jamais utilisées à des fins publicitaires, marketing ou statistiques.</li>
+    <li>jamais transmises à un tiers ;</li>
+    <li>jamais utilisées à des fins publicitaires ou statistiques.</li>
   </ul>
 
-  <h2>3. Rapports de plantage anonymes (Firebase Crashlytics)</h2>
-  <p>
-    Pour identifier et corriger les bugs, Tourond utilise
-    <strong>Firebase Crashlytics</strong> (Google). Lorsque l'application
-    plante de manière inattendue, un rapport technique anonyme est envoyé.
-    Il contient :
-  </p>
-  <ul>
-    <li>la trace technique du plantage (stack trace) ;</li>
-    <li>la version de l'application et la version de votre système Android ;</li>
-    <li>le modèle de votre appareil (ex. <em>Pixel 8</em>) et la quantité de RAM ;</li>
-    <li>un identifiant pseudonyme généré par Firebase pour regrouper les plantages d'un même appareil.</li>
-  </ul>
-  <p>
-    Ces rapports ne contiennent <strong>aucune</strong> donnée que vous
-    avez saisie dans Tourond : ni vos noms, ni vos salaires, ni vos
-    dépenses, ni vos sauvegardes. Ils ne contiennent pas non plus
-    d'identifiant publicitaire ni d'identifiant de votre compte Google.
-  </p>
-  <p>
-    Base légale : <strong>intérêt légitime</strong> (article 6.1.f du
-    RGPD), à savoir maintenir la qualité et la stabilité de l'application.
-  </p>
-  <p>
-    Conservation : 90 jours maximum côté Firebase (durée par défaut), puis
-    suppression automatique.
-  </p>
-
-  <h2>4. Partage manuel avec une autre personne</h2>
+  <h2>3. Partage manuel avec une autre personne</h2>
   <p>
     L'application propose une fonction « Partager avec mon foyer » qui
     permet d'envoyer manuellement une copie de vos données à une autre
@@ -102,47 +71,24 @@
     action manuelle de votre part à chaque fois.
   </p>
 
-  <h2>5. Permissions Android</h2>
+  <h2>4. Permissions Android</h2>
   <p>
     L'application demande uniquement les permissions strictement nécessaires
     à son fonctionnement : accès au stockage interne pour lire et écrire ses
-    propres fichiers de sauvegarde, et accès Internet pour l'envoi des
-    rapports de plantage anonymes (cf. section 3). Tourond
-    <strong>ne demande pas</strong> l'accès à votre liste de contacts, à
-    votre localisation, à la caméra, ni à aucun capteur.
+    propres fichiers de sauvegarde. Tourond <strong>ne demande pas</strong>
+    l'accès à Internet, à votre liste de contacts, à votre localisation, à
+    la caméra, ni à aucun capteur.
   </p>
 
-  <h2>6. Sous-traitants et transferts hors UE</h2>
+  <h2>5. Base légale du traitement</h2>
   <p>
-    Le seul sous-traitant de Tourond est <strong>Google</strong>, via
-    Firebase Crashlytics, pour la collecte des rapports de plantage. Ces
-    données peuvent être stockées et traitées aux États-Unis. Ces
-    transferts sont encadrés par les clauses contractuelles types de la
-    Commission européenne et par l'adhésion de Google au
-    <em>EU-U.S. Data Privacy Framework</em>.
-  </p>
-  <p>
-    Politique de Google :
-    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
-    — Politique Firebase :
-    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
+    Le traitement des données saisies relève de <strong>l'exécution du
+    service demandé</strong> par l'utilisateur (article 6.1.b du RGPD), à
+    savoir le calcul de la répartition équitable de ses dépenses. Aucune
+    donnée n'est traitée à d'autres fins.
   </p>
 
-  <h2>7. Base légale globale du traitement</h2>
-  <ul>
-    <li>
-      <strong>Données saisies :</strong> exécution du service demandé
-      (article 6.1.b du RGPD) — calcul de la répartition équitable des
-      dépenses du foyer.
-    </li>
-    <li>
-      <strong>Rapports de plantage :</strong> intérêt légitime (article
-      6.1.f du RGPD) — assurer la qualité et la stabilité de
-      l'application.
-    </li>
-  </ul>
-
-  <h2>8. Conservation des données</h2>
+  <h2>6. Conservation des données</h2>
   <p>
     Vos données restent sur votre téléphone tant que l'application est
     installée. Désinstaller Tourond supprime définitivement la base locale
@@ -151,35 +97,28 @@
     supprimer toutes les données à tout moment.
   </p>
 
-  <h2>9. Vos droits</h2>
+  <h2>7. Vos droits</h2>
   <p>
-    Vous disposez des droits d'accès, de rectification, d'effacement, de
-    limitation, d'opposition et de portabilité prévus par le RGPD.
-    Concernant les <strong>données saisies dans l'application</strong> :
-    elles étant entièrement locales, vous pouvez à tout moment les
-    consulter, les modifier, les exporter (au format JSON via la fonction
-    Sauvegarde) ou les supprimer depuis l'application, sans avoir à nous
-    solliciter.
+    L'application étant entièrement locale, vous disposez d'un contrôle
+    total sur vos données : vous pouvez à tout moment les consulter, les
+    modifier, les exporter (au format JSON via la fonction Sauvegarde) ou
+    les supprimer, sans avoir à nous solliciter.
   </p>
   <p>
-    Concernant les <strong>rapports de plantage</strong> stockés chez
-    Firebase, vous pouvez en demander la suppression en nous écrivant à
+    Pour toute question relative à la protection de vos données, vous
+    pouvez écrire à
     <a href="mailto:baptistemichel22@gmail.com">baptistemichel22@gmail.com</a>.
-    En pratique, ces rapports étant pseudonymisés, leur suppression est
-    automatique au bout de 90 jours.
-  </p>
-  <p>
     Vous disposez également du droit d'introduire une réclamation auprès de
     la <a href="https://www.cnil.fr/" target="_blank" rel="noopener">CNIL</a>.
   </p>
 
-  <h2>10. Public visé</h2>
+  <h2>8. Public visé</h2>
   <p>
     Tourond n'est pas destinée aux enfants de moins de 13 ans et aucune
     donnée n'est collectée à leur sujet.
   </p>
 
-  <h2>11. Modification de la politique</h2>
+  <h2>9. Modification de la politique</h2>
   <p>
     Cette politique peut être mise à jour pour refléter des évolutions de
     l'application ou des obligations légales. La date de dernière mise à
